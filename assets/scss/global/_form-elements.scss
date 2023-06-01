@@ -1,0 +1,223 @@
+.form-group {
+    margin-bottom: 10px;
+}
+
+.textarea,
+.form-control {
+    font-size: 14px;
+    color: $black;
+    background-color: $white;
+    line-height: normal;
+    font-weight: 400;
+    width: 100%;
+    padding: 12px 10px;
+    border-radius: 0;
+    height: 40px;
+    text-align: left;
+    border: 1px solid #d1d1d1;
+    transition: all .35s ease;
+    @include placeholder($iGray);
+
+    &.is--error,
+    &.error-field {
+        border-color: red;
+    }
+
+    &:focus {
+        box-shadow: none;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 12px;
+    }
+}
+
+.iti--separate-dial-code {
+    .iti__selected-dial-code {
+        font-size: 14px;
+        color: $black;
+        line-height: normal;
+        font-weight: 400;
+        @media (max-width: 767px) {
+            font-size: 12px;
+        }
+    }
+}
+
+.iti__country {
+    font-size: 14px;
+    color: $black;
+    line-height: normal;
+    font-weight: 400;
+    @media (max-width: 767px) {
+        font-size: 12px;
+    }
+}
+
+.iti,
+select {
+    width: 100%;
+}
+
+.textarea {
+    height: 220px;
+
+    &.form-control {
+        height: 220px;
+    }
+}
+
+.label {
+    font-size: 13px;
+    font-weight: 700;
+    color: $black;
+    position: relative;
+    display: block;
+    margin-bottom: 5px;
+
+    @media (max-width: 767px) {
+        font-size: 12px;
+    }
+}
+
+.btn {
+    font-size: 30px;
+    font-weight: 400;
+    padding: 12px 33px;
+    border-radius: 6px;
+    text-align: center;
+
+    @media (max-width: 767px) {
+        font-size: 12px;
+    }
+
+    @media (max-width: 991px) {
+        padding: 12px 20px;
+    }
+
+    &.btn-primary {
+        background-color: $black;
+        border-color: $black;
+        color: $white;
+
+        &:not(:disabled):not(.disabled).active:focus,
+        &:not(:disabled):not(.disabled):active:focus,
+        &.focus,
+        &:focus {
+            box-shadow: 0 0 2px .2rem rgba($iPrimary, .3);
+        }
+
+        &:not(:disabled):not(.disabled).active,
+        &:not(:disabled):not(.disabled):active,
+        &:hover,
+        &.focus,
+        &:focus {
+            background-color: transparent;
+            border-color: $black;
+            color: $black;
+        }
+    }
+
+    &.btn-secondary {
+        padding: 10px 30px;
+        font-size: 16px;
+        background-color: $black;
+        border-color: $black;
+
+        &:not(:disabled):not(.disabled).active:focus,
+        &:not(:disabled):not(.disabled):active:focus,
+        &.focus,
+        &:focus {
+            box-shadow: 0 0 2px .2rem rgba($black, .3);
+        }
+
+        &:not(:disabled):not(.disabled).active,
+        &:not(:disabled):not(.disabled):active,
+        &:hover,
+        &.focus,
+        &:focus {
+            background-color: $iPrimary;
+            border-color: $iPrimary;
+        }
+    }
+
+    &.btn-round {
+        border-radius: 25px;
+        background-color: transparent;
+        font-size: 13px;
+
+        &.btn-primary {
+            border-color: $iPrimary;
+            color: $white;
+
+            &:not(:disabled):not(.disabled).active:focus,
+            &:not(:disabled):not(.disabled):active:focus,
+            &.focus,
+            &:focus {
+                box-shadow: 0 0 2px .2rem rgba($iPrimary, .3);
+            }
+
+            &:not(:disabled):not(.disabled).active,
+            &:not(:disabled):not(.disabled):active,
+            &:hover,
+            &.focus,
+            &:focus {
+                background-color: $iPrimary;
+                border-color: $iPrimary;
+                color: $white;
+            }
+        }
+    }
+
+    &.btn-link {
+        color: $iPrimary;
+        padding: 10px 0 0;
+        font-weight: 400;
+        font-size: 20px;
+        position: relative;
+        line-height: normal;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 4px;
+            width: 100%;
+            background-color: $iPrimary;
+        }
+
+        &:hover,
+        &.focus,
+        &:focus {
+            text-decoration: none;
+            color: #c20828;
+        }
+
+        &.link-white {
+            color: $white;
+
+            &:hover,
+            &.focus,
+            &:focus {
+                color: $iPrimary;
+            }
+        }
+
+        @media(max-width:767px) {
+            font-size: 18px;
+        }
+
+        @media(max-width:575px) {
+            font-size: 16px;
+        }
+    }
+}
+
+button,
+.btn {
+    &:focus {
+        box-shadow: none;
+        outline: none;
+    }
+}

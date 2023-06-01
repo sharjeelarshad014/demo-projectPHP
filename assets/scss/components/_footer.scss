@@ -1,0 +1,144 @@
+.footer {
+    background-color: $black;
+    padding: 60px 0;
+}
+
+
+.logo-widget {
+    h5{
+        font-size: 18px;
+        color: $white;
+    }
+    a {
+        display: inline-block;
+    }
+
+    img {
+        height: 40px;
+    }
+
+    p {
+        font-size: 14px;
+        color: $white;
+
+        @media(max-width: 1366px) {
+            font-size: 14px;
+        }
+    }
+}
+
+.link-widget {
+    h5 {
+        color: $white;
+        font-size: 18px;
+        font-family: $secondaryFont;
+        font-weight: 700;
+        padding-top: 0;
+
+        @media(max-width: 1366px) {
+            font-size: 16px;
+        }
+    }
+
+    ul {
+        li {
+            margin-bottom: 12px;
+            line-height: 21px;
+
+            a {
+                font-size: 18px;
+                color: $white;
+                display: inline-block;
+                font-weight: 400;
+                line-height: normal;
+
+                &.is--active,
+                &:hover {
+                    text-decoration: underline !important;
+                }
+
+                @media(max-width: 1366px) {
+                    font-size: 14px;
+                }
+            }
+
+            &.is--active {
+                a {
+                    text-decoration: underline !important;
+                }
+            }
+        }
+    }
+}
+
+.sec-copyright {
+    padding: 14px 0;
+    background-color: $iPrimary;
+
+    p {
+        font-size: 14px;
+        color: $black;
+        margin: 0;
+
+        @media(max-width: 1366px) {
+            font-size: 12px;
+        }
+    }
+
+    .copyright-links {
+        margin-left: auto;
+    }
+
+    @media(max-width: 767px) {
+        .fflex {
+            flex-direction: column;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .copyright-links {
+            margin-left: 0;
+            margin-top: 10px;
+        }
+    }
+}
+
+.copyright-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    li {
+        padding-left: 12px;
+        margin-left: 12px;
+        position: relative;
+        border-left: 1px solid $black;
+
+        a {
+            font-size: 14px;
+            color: $black;
+            display: block;
+            line-height: 14px;
+
+            &:hover {
+                text-decoration: underline !important;
+            }
+
+            @media(max-width: 1366px) {
+                font-size: 12px;
+            }
+        }
+
+        &.is--active{
+            text-decoration: underline !important;
+        }
+
+        &:first-child {
+            padding-left: 0;
+            margin-left: 0;
+            border-left: 0;
+        }
+    }
+}
