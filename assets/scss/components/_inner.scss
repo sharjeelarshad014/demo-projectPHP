@@ -1,0 +1,238 @@
+.s-bg{
+    background: $black;
+    padding: 10px 0;
+    margin-top: 106px;
+  
+    h3{
+        color: $white;
+        font-size: 18px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 0;
+    }
+}
+.flex-area{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    label{
+        margin-bottom: 5px;
+    }
+    .form-control{
+        border: 1px solid $black;
+        height: 45px;
+    }
+    .form-group{
+        margin: 0 15px;
+        width: 30%;
+    }
+    @media(max-width:480px){
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .form-group{
+            width: 100%;
+            margin: 10px 0;
+        }
+
+    }
+ 
+}
+.btn-first{
+    background: #00ACBD;
+    padding: 15px 35px;
+    color: $white;
+    border-radius: 8px;
+    display: flex;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+
+    &:hover{
+        background-color: $black;
+        color: $white;
+    }
+}
+.radio-wrap{
+    border: 1px solid $black;
+    width: 80%;
+    margin: 0 auto;
+}
+.radio-head{
+    background: $black;
+    padding: 10px 20px;
+   h4{
+    margin-bottom: 0;
+    font-size: 25px;
+    color: $white;
+   }
+
+}
+.radio-body{
+    padding: 10px 20px;
+    height: 200px;
+    overflow-y: scroll;
+    .radio-group{
+        display: flex;
+        align-items: center;
+        margin-bottom: 7px;
+       label{
+        font-family: 400;
+        margin-bottom: 0;
+        padding-left: 10px;
+       }
+       input{
+        width: 18px;
+        height: 18px;
+       }
+    }
+}
+.img-100{
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.veh-wrap{
+    border-radius: 5px;
+    margin-bottom: 20px;
+    &:hover{
+        box-shadow: 1px 5px 5px grey;
+    }
+    @media(max-width:991px){
+        max-width: 500px;
+        margin: 0 auto 20px;
+    }
+    
+}
+.veh-content{
+    display: flex;
+    align-items: center;
+    padding: 30px 20px;
+    border: 1px solid rgb(180, 180, 180);
+    justify-content: space-between;
+    .veh-name{
+        h5{
+            font-size: 18px;
+            margin-bottom: 0;
+            @media(max-width:991px){
+            
+              font-size: 12px;
+            }
+        }
+    }
+    .veh-price{
+        h6{
+            
+            margin-bottom: 0;
+            @media(max-width:991px){
+            
+                font-size: 12px;
+              }
+        }
+    }
+}
+.no-color{
+    background-color: transparent;
+}
+.heading{
+    text-align: center;
+    padding: 40px 0;
+    h3{
+        font-size: 32px;
+        color: #393939;
+        margin-bottom: 0;
+
+    }
+}
+.chauf-img{
+    width: 100%;
+    height: 100%;
+    
+}
+.chauf-sec{
+    background: $black;
+    padding: 10px 0;
+    margin-top: 106px;
+    
+}
+.chauf-head{
+    text-align: center;
+    h3{
+        color: $white;
+        font-size: 35px;
+        font-family: $secondaryFont;
+    }
+}
+.chauf-content{
+    p{
+        color: $white;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    h6{
+        color: $white;
+        font-weight: 700px;
+        margin-bottom: 20px;
+        font-size: 22px;
+
+    }
+    @media(max-width:991px){
+        margin-top: 10px;
+    }
+}
+.map-sec{
+    .heading{
+        h3{
+            font-size: 4em;
+        
+        }
+        @media(max-width:991px){
+            padding: 20px 0 5px;
+            h3{
+                font-size: 28px;
+            }
+        }
+    }
+}
+.map-content{
+    p{
+        font-size: 16px;
+    }
+}
+.mt-106{
+    margin-top: 106px;
+}
+
+.blog-wrap{
+    margin-bottom: 20px;
+    a{
+        margin-bottom: 5px;
+        display: block;
+        h4{
+            color: #CC3366;
+            font-weight: 500;
+            font-size: 30px;
+            margin: 0 0 5px 0;
+            line-height: 1.2;
+            &:hover{
+                color: $black;
+            }
+            @media(max-width:991px){
+                font-size: 24px;
+            }
+            @media(max-width:480px){
+                font-size: 18px;
+            }
+        }
+    }
+    p{
+        font-size: 1rem;
+        margin-bottom: 0;
+        @media(max-width:480px){
+            font-size: 0.9rem;
+        }
+    }
+   
+}
